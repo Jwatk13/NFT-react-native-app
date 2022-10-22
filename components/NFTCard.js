@@ -30,6 +30,28 @@ const NFTCard = ({ data }) => {
                     <CircleButton imgUrl={assets.heart} right={10} top={10} />
                 </View>
                 <SubInfo />
+                <View style={{ width: "100%", padding: SIZES.font }}>
+                    <NFTTitle
+                        title={data.name}
+                        subTitle={data.creator}
+                        titleSize={SIZES.large}
+                        subTitleSize={SIZES.small}
+                    />
+                    <View style={{ 
+                        marginTop: SIZES.font,
+                        flexDirection: "row",
+                        justifyContent: "space-between",
+                        aligtnItems: 'center'
+                    }}>
+                        <EthPrice price={data.price} />
+                        <RectangleButton 
+                            minWidth={120}
+                            fontSize={SIZES.font}
+                            //handlePress function will navigate to the details page of the specific nft card a user wants to view. In the navigate function you pass in the "Stack.screen" name you want to go to and the data you want to view on that screen. This is similar to ReactRouter
+                            handlePress={() => navigation.navigate("Details", { data })}
+                        />
+                    </View>
+                </View>
         </View>
   )
 }
