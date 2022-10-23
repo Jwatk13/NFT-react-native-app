@@ -36,8 +36,8 @@ export const RectangleButton = ({ minWidth, fontSize, handlePress, ...props }) =
         padding: SIZES.small,
         ...props,
       }}
-      onPress={handlePress}
-    >
+        onPress={handlePress}
+      >
       <Text style={{
         fontFamily: FONTS.semiBold,
         fontSize: fontSize,

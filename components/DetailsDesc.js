@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { View, Text } from 'react-native';
-
 import { EthPrice, NFTTitle } from './SubInfo';
 import { COLORS, SIZES, FONTS } from '../constants';
 
 const DetailsDesc = ({ data }) => {
   const [text, setText] = useState(data.description.slice(0, 100));
-  const [readMore, setReadMore] = useState(false)
+  const [readMore, setReadMore] = useState(false);
 
   return (
     <>
@@ -36,7 +35,7 @@ const DetailsDesc = ({ data }) => {
             }}>
                 Description
             </Text>
-            <View style={{ marginTop: SIZES.base }} >
+            <View style={{ marginTop: SIZES.base }}>
                 <Text style={{ 
                     fontSize: SIZES.small,
                     fontFamily: FONTS.regular,
@@ -69,4 +68,4 @@ const DetailsDesc = ({ data }) => {
   )
 }
 
-export default DetailsDesc
+export default DetailsDesc;

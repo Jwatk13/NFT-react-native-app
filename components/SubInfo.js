@@ -68,35 +68,33 @@ export const EthPrice = ({ price }) => {
 
   export const EndDate = () => {
     return (
-      <View 
-        style={{
-           paddingHorizontal: SIZES.font,
-           paddingVertical: SIZES.base,
-           backgroundColor: COLORS.white, 
-           justifyContent: 'center',
-           alignItems: 'center',
-           ...SHADOWS.light,
-           elevation: 1,
-           maxWidth: '50%'
-        }}
-      >
-        <Text style={{
-            fontFamily: FONTS.regular,
-            fontSize: SIZES.small,
-            color: COLORS.primary
-            }}
-        >
-        Ending in
-        </Text>
-        <Text style={{
-            fontFamily: FONTS.semiBold,
-            fontSize: SIZES.medium,
-            color: COLORS.primary
-            }}
-        >
-        12h 30m
-        </Text>
-      </View>
+        <View 
+            style={{
+            paddingHorizontal: SIZES.font,
+            paddingVertical: SIZES.base,
+            backgroundColor: COLORS.white, 
+            justifyContent: 'center',
+            alignItems: 'center',
+            ...SHADOWS.light,
+            elevation: 1,
+            maxWidth: '50%'
+        }}>
+            <Text style={{
+                fontFamily: FONTS.regular,
+                fontSize: SIZES.small,
+                color: COLORS.primary
+                }}
+            >
+            Ending in
+            </Text>
+            <Text style={{
+                fontFamily: FONTS.semiBold,
+                fontSize: SIZES.medium,
+                color: COLORS.primary
+            }}>
+                12h 30m
+            </Text>
+        </View>
     )
   }
 
@@ -108,7 +106,7 @@ export const EthPrice = ({ price }) => {
         marginTop: -SIZES.extraLarge,
         flexDirection: "row",
         justifyContent: "space-between",
-      }} >
+      }}>
         <People />
         <EndDate />
       </View>

@@ -79,4 +79,4 @@ const HomeHeader = ({ onSearch }) => {
   )
 }
 
-export default HomeHeader
+export default HomeHeader;

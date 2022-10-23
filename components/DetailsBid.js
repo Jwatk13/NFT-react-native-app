@@ -1,7 +1,7 @@
 import { View, Text, Image } from 'react-native';
 import { EthPrice } from './SubInfo';
 import { COLORS, SIZES, FONTS } from '../constants';
-import React from 'react'
+import React from 'react';
 
 const DetailsBid = ({ bid }) => {
     return (
@@ -42,4 +42,4 @@ const DetailsBid = ({ bid }) => {
     )
 }
 
-export default DetailsBid
+export default DetailsBid;
