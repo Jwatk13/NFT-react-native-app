@@ -20,7 +20,7 @@ const NFTData = [
       {
         id: "BID-12",
         name: "Jennifer Sia",
-        price: 4.5,
+        price: 4.50,
         image: assets.person03,
         date: "December 27, 2019 at 1:50 PM",
       },
