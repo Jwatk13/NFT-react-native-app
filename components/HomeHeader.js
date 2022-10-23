@@ -1,5 +1,5 @@
 import { View, Text, Image, TextInput } from 'react-native';
-import { COLORS, FONTS, SIZES, assets } from '../constansts';
+import { COLORS, FONTS, SIZES, assets } from '../constants';
 
 const HomeHeader = ({ onSearch }) => {
   return (
@@ -57,7 +57,7 @@ const HomeHeader = ({ onSearch }) => {
         <View style={{
             width: '100%',
             borderRadius: SIZES.font,
-            backgroundColor: COLORS.grey,
+            backgroundColor: COLORS.gray,
             flexDirection: 'row',
             alignItems: 'center',
             paddingHorizontal: SIZES.font,
